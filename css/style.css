@@ -1,0 +1,390 @@
+@import url(reset.css);
+
+/* font-family: 'Lobster', cursive; */
+
+/* Header
+========================== */
+.header {
+    margin: 20px 0 26px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    font-family: 'Lobster', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    color: #44c0c2;
+}
+
+
+/* Nav
+========================== */
+.nav__item {
+    font-size: 15px;
+    color: #484c55;
+    font-weight: 400;
+
+    transition: border-bottom .2s linear;
+}
+.nav__item:not(:first-child) {
+    margin-left: 51px;
+}
+.nav__item:hover {
+    padding-bottom: 15px;
+
+    color: #49cbcd;
+
+    border-bottom: 3px solid #49cbcd;
+}
+
+
+/* Intro
+========================== */
+.intro {
+    height: 566px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: url(../images/Intro/Intro-bg.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.intro__content {
+    text-align: center;
+}
+.intro__title {
+    margin-bottom: 45px;
+
+    font-size: 63px;
+    font-weight: 600;
+    color: #fff;
+}
+.intro__subtitle {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 60px;
+
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Service
+========================== */
+.service {
+    margin: 100px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.service__item {
+    width: 25%;
+    padding: 0 15px;
+
+    text-align: center;
+}
+.service__link {
+    display: inline-block;
+    padding: 30px;
+    margin-bottom: 40px;
+
+    background-color: transparent;
+
+    border: 3px solid #49cbcd;
+    border-radius: 50%;
+}
+.service__icon {
+    width: 37px;
+    height: 37px;
+
+    fill: #49cbcd;
+}
+.service__title {
+    margin-bottom: 17px;
+
+    font-size: 22px;
+    font-weight: 400;
+    color: #4e525d;
+}
+.service__text {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+/* Portfolio
+========================== */
+.portfolio {
+    padding: 50px 0 65px;
+
+    text-align: center;
+
+    background-color: #f1f1f1;
+}
+.portfolio__flex {
+    margin-bottom: 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio__inner {
+    width: 33.3333%;
+    padding: 15px 15px;
+}
+.portfolio__item {
+
+    width: 370px;
+    height: 314px;
+    overflow: hidden;
+
+    position: relative;
+
+    border-radius: 3px;
+}
+.portfolio__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    transform: translate3d(-50%, -50%, 0);
+}
+
+/* Team
+========================== */
+.team {
+    padding: 50px 0 70px;
+
+    text-align: center;
+}
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.team__item {
+    margin: o -15px;
+    padding: 0 15px;
+    width: 25%;
+}
+.team__photo {
+    margin-bottom: 70px;
+    width: 200px;
+    height: 200px;
+
+    background-color: #eeeef0;
+
+    border-radius: 50%;
+}
+.team__title {
+    margin-bottom: 5px;
+
+    font-size: 22px;
+    font-weight: 400;
+    color: #4e525d;
+}
+.team__subtile {
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #4e525d;
+}
+.team__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4e525d;
+    line-height: 1.9;
+}
+
+/* Plans
+========================== */
+.plans {
+    padding: 70px 0 50px;
+
+    background-color: #f1f1f1;
+}
+.plans__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    text-align: center;
+
+
+}
+.plans__item {
+    width: 33.3333%;
+    padding: 0 15px;
+}
+.plans__item div {
+    border-top: 1px solid #ecf0f1;
+    border-left: 1px solid #ecf0f1;
+    border-right: 1px solid #ecf0f1;
+}
+.plans--active .plans__title,.plans--active .btn__plans{
+    background: #49cbcd;
+
+}
+.plans__title {
+    padding: 15px 0;
+
+    font-size: 26px;
+    font-weight: 400;
+    color: #fff;
+
+    background-color: #485460;
+}
+.plans__money {
+    padding: 15px 0;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: #485460;
+
+    background-color: #f8f9fb;
+}
+.plans__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8c9299;
+
+    background-color: #fff;
+}
+.plans__text span {
+    display: block;
+    padding: 15px 0;
+}
+.plans__button {
+    padding: 30px 0;
+
+    background-color: #f8f9fb;
+
+    border-bottom: 1px solid #ecf0f1;
+}
+
+/* Testimonials
+========================== */
+.testimonials {
+    padding: 135px 0 70px;
+}
+.testimonials__inner {
+    width: 650px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+.testimonials__title {
+    margin-bottom: 30px;
+
+    font-size: 42px;
+    font-weight: 400;
+    color: #4e525d;
+}
+.testimonials__text {
+    margin-bottom: 30px;
+
+    font-size: 19px;
+    font-weight: 400;
+    color: #4e525d;
+    line-height: 1.5;
+}
+.testimonials__link {
+    font-size: 21px;
+    font-weight: 400;
+    color: #9a8faf;
+}
+/* Contacts
+========================== */
+.contacts {
+    
+}
+
+/* Block__title
+========================== */
+.block__title {
+    margin-bottom: 30px;
+
+    font-size: 42px;
+    font-weight: 400;
+    color: #4e525d;
+    text-align: center;
+}
+
+/* Button
+========================== */
+.btn {
+    padding: 15px 40px;
+
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+
+    border: 3px solid #fff;
+    border-radius: 7px;
+
+    transition: background .2s linear;
+}
+.btn:hover {
+    color: #000;
+
+    background-color: #fff;
+}
+/* Service--btn */
+.btn__service {
+    padding: 7px 13px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+
+    background-color: #49cbcd;
+
+    border-radius: 7px;
+
+    transition: background .2s linear;
+}
+.btn__service:hover {
+    background: #38a1a3;
+}
+/* Portfolio--btn */
+.btn__portfolio {
+    padding: 16px 40px;
+
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+
+    background-color: #49cbcd;
+
+    border-radius: 5px;
+
+    transition: background .2s linear;
+}
+.btn__portfolio:hover {
+    background: #38a1a3;
+}
+/* Plans--btn */
+.btn__plans {
+    padding: 10px 50px;
+
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+
+    background-color: #485460;
+
+    border-radius: 7px;
+
+    transition: background .2s linear;
+}
+/* Contacts__btn */
+.btn__contacts {
+
+}
